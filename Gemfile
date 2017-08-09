@@ -9,6 +9,8 @@ end
 gem 'devise', '~> 4.3'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'acts_as_votable', '~> 0.10.0'
+gem 'simple_form', '~> 3.5'
+gem 'record_tag_helper', '~> 1.0'
 
 gem 'coffee-script-source', '1.8.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
