@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.3'
+ruby '2.3.1'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -16,7 +16,13 @@ gem 'coffee-script-source', '1.8.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -35,9 +41,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
-
+gem 'bcrypt', '~> 3.1.11'
+# gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
