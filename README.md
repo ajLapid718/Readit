@@ -40,3 +40,13 @@ A clone of Reddit. First app deployed to Heroku. This helped me to develop sligh
 * Auth Pattern
 
 * No functionality or view for canceling an account/deleting an account.
+
+
+Side Note/Reminder: For the favicon, this is what I did.
+1) Resize picture into 16x16 or 32x32 heightxwidth.
+2) Make sure the extension is .ico
+3) Put the file in the public pipeline (didn't work with assets pipeline).
+4) Put: `<link href="/ubecon.ico" rel="shortcut icon" type="image/x-icon" />` in the head of the html in the application.html.erb folder.
+5) Syntax: in HTML5, the backslash to close the link tag is unnecessary but it won't break if it is there like above. The whitespace is also benign. It could have been written like so: `<link href="/ubecon.ico" rel="shortcut icon" type="image/x-icon">`
+6) No need to scale app aka no need to run: `heroku ps:scale web=0` in order to make changes as far as I can tell.
+7) Figure out how to use the assets/images pipeline because that is more organized than using the public folder (although it is weird that the stock/default favicon.ico file is located in the pubic pipeline) and learn the differences.
