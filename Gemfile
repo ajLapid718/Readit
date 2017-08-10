@@ -11,14 +11,15 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'simple_form', '~> 3.5'
 gem 'record_tag_helper', '~> 1.0'
+gem 'sqlite3'
 
 gem 'coffee-script-source', '1.8.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use sqlite3 as the database for Active Record
-group :production do
-  gem 'pg'
-end
+# group :production do
+#   gem 'pg'
+# end
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -37,8 +38,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.11'
-# gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+# gem 'bcrypt', '~> 3.1.11'
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
