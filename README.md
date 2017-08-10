@@ -59,5 +59,5 @@ Side Note/Reminder: For the favicon, this is what I did.
     - Other web browsers and their requirements (chrome vs internet explorer)
 8) No need to scale app aka no need to run: `heroku ps:scale web=0` in order to make changes as far as I can tell.
 9) Figure out how to use the assets/images pipeline (does the favicon_link_tag method assist in this endeavor?) because that is more organized than using the public folder (although it is weird that the stock/default favicon.ico file is located in the pubic pipeline) and learn the differences.
-10) According to a SO user: "Place the favicon.ico image in /app/assets/images/ if you are using the asset pipeline, and in /public/images/ if you are not"
-11) According to a SO user: " `<%= favicon_link_tag 'favicon.ico' %>` points to app/assets/images/favicon.ico, as opposed to public/assets/images/favicon.ico"
+10) According to a SO user: "Place the favicon.ico image in /app/assets/images/ if you are using the asset pipeline, and in /public/images/ if you are not" when using the rails helper metod.
+11) According to a SO user: " `<%= favicon_link_tag 'favicon.ico' %>` points to app/assets/images/favicon.ico, as opposed to public/assets/images/favicon.ico" but this is odd because I am using the helper and the icon is in the public pipeline...
