@@ -27,6 +27,13 @@ A clone of Reddit. First app deployed to Heroku. This helped me to develop sligh
   down
   ```
 
+  `left`, `up`, `right`, `down`
+
+
+
+
+
+
 ##### Features
 * Sign In
 * Sign Up
