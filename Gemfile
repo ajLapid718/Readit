@@ -11,6 +11,9 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'simple_form', '~> 3.5'
 gem 'record_tag_helper', '~> 1.0'
+gem 'jquery-rails'
+
+
 # gem 'rails_12factor', group: :production
 # gem 'sqlite3'
 
