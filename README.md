@@ -14,6 +14,19 @@ A clone of Reddit. First app deployed to Heroku. This helped me to develop sligh
   print the_front_page_of_the_internet
   ```
 
+  ```
+  left
+  ```
+  ```
+  up
+  ```
+  ```
+  right
+  ```
+  ```
+  down
+  ```
+
 ##### Features
 * Sign In
 * Sign Up
