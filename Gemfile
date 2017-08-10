@@ -11,15 +11,19 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'simple_form', '~> 3.5'
 gem 'record_tag_helper', '~> 1.0'
-gem 'sqlite3'
+# gem 'sqlite3'
 
 gem 'coffee-script-source', '1.8.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use sqlite3 as the database for Active Record
-# group :production do
-#   gem 'pg'
-# end
+group :production do
+  gem "pg"
+end
+
+group :development, :test do
+  gem "sqlite3"
+end
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
